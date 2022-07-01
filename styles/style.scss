@@ -1,3 +1,5 @@
+$primary-color: blueviolet;
+$secondary-color:aquamarine;
 body {
   margin: 0;
   padding: 0;
@@ -6,24 +8,26 @@ body {
 .container{
   height: 100vh;
   display: flex;
+  
   .esquerdo{
     width: 50%;
-    background-color: blueviolet;
+    background-color: $primary-color;
     .texto{
       margin-top: 40%;
       text-align: center;
       font-size: 150px;
-      color:aquamarine;
+      color: $secondary-color;
     }
   }
+
   .direito{
     width: 50%;
-    background-color: aquamarine;
+    background-color: $secondary-color;
     .texto{
       margin-top: 40%;
       text-align: center;
       font-size: 150px;
-      color:blueviolet;
+      color: $primary-color;
     }
   }
 }
